@@ -1,0 +1,136 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  height: auto !important;
+  min-height: 100% !important;
+  background-color: #f9f9f9;
+}
+
+.App {
+  padding: 20px;
+}
+
+.paddLeftRight10{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div, .relative{
+  display: block;
+  position: relative;
+}
+
+nav{
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 3px rgba(0,0,0, 0.3);
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0, 0.3);
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0, 0.3);
+}
+
+nav > ul{
+  display: block;
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li.list-group-item{
+  background-color: #f9f9f9;
+  border: none;
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav > ul > li.list-group-item button{
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  border: 0;
+}
+
+nav > ul > li.list-group-item.current {
+  background-color: #7a8a99;
+  border-color: #dae0e5;
+  color: #fff;
+}
+
+.my-tooltip{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: rgba(0,0,0, 0.6);
+  color: #fff;
+  max-width: 420px;
+}
+
+.my-tooltip.current{
+  display: block;
+}
+
+.my-tooltip a{
+  color: #f90;
+}
+
+.my-tooltip button.close{
+  color: #fff;
+  opacity: 1;
+  font-weight: 100;
+  transform: scale(1.3, 1);
+}
+
+div.checkbox > input[type=checkbox]{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  opacity: 0;
+}
+
+div.checkbox > input[type=checkbox] + label{
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+div.checkbox > input[type=checkbox] + label:before{
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: solid 1px #666;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div.checkbox > input[type=checkbox]:checked + label:before{
+  background-color: #e00;
+  border-color: #e00;
+}
+
+div.checkbox > input[type=checkbox] + label:after{
+  content: "\2713";
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 2px;
+  line-height: 100%;
+  color: #fff;
+}
+
+div.checkbox > input[type=checkbox]:checked + label:after{
+  display: block;
+}
