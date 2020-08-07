@@ -1,4 +1,6 @@
 # jobdzenan
 Simple React list with custom tooltip/modal
 
-Small task
+npm install
+
+npm start
